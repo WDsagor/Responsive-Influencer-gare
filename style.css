@@ -6,6 +6,7 @@ body {
 /* influencer-section start */
 .influencer-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -42,8 +43,8 @@ body {
 /* influencer-section end */
 
 .other-logo {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 50px 100px;
@@ -104,7 +105,31 @@ footer a:hover {
   color: #10233f;
   background-color: white;
 }
-
-@media only screen and (min-width: 768px){
-  
+@media (max-width: 1200px) and (min-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 767px) and (min-width: 340px) {
+  footer a {
+    background-color: rebeccapurple;
+  }
+  .other-logo img {
+    margin-right: 0px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    padding: 0 20px;
+  }
+  .Featured-products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Featured-products img {
+    width: 50%;
+  }
 }
