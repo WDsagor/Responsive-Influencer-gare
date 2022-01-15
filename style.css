@@ -1,7 +1,9 @@
 body {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
   font-family: "Poppins", sans-serif;
+  color: #18191f;
 }
+/* influencer-section start */
 .influencer-section {
   display: flex;
   justify-content: center;
@@ -15,6 +17,10 @@ body {
 }
 .camera {
   width: auto;
+}
+.camera:hover {
+  transform: rotate(30deg);
+  transition: 1s ease-in-out;
 }
 .button {
   color: white;
@@ -32,4 +38,33 @@ body {
   transform: translateX(20px);
   transition: 1s;
   padding: 0 20px;
+}
+/* influencer-section end */
+
+.other-logo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px;
+}
+.other-logo img {
+  margin-right: 20px;
+}
+.popular-collection h1 {
+  text-align: center;
+  padding: 50px 0;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  padding: 0 70px;
+}
+.rating {
+  color: #fb8200;
+}
+#botom {
+  position: absolute;
+  right: 70px;
 }
