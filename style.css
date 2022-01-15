@@ -68,3 +68,43 @@ body {
   position: absolute;
   right: 70px;
 }
+.Featured-products {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.Featured-products img {
+  width: 30%;
+  margin: 0 50px;
+}
+.Featured-products div {
+  margin-right: 100px;
+}
+#last {
+  border-radius: 0px;
+}
+#last img {
+  width: auto;
+  margin: 0;
+}
+footer {
+  background-color: #0a0826;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+footer a {
+  padding: 15px;
+  color: aliceblue;
+  background-color: #10233f;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+footer a:hover {
+  color: #10233f;
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px){
+  
+}
